@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="/home.css"> --}}
+    <style>
+        body{
+            font-family: 'Arial', sans-serif;
+            background-color: #efbcbc;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form{
+            margin-top: 50px;
+        }
+
+        input{
+            margin-bottom: 20px;
+        }
+
+        button{
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90px;
+        }
+
+        button:hover{
+            background-color: #306d33;
+        }
+    </style>
+    <title>File manager</title>
+</head>
+<body>
+    {{!-- <h1>helloo welcome to uplossad the file..</h1> --}}
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="profileImage">
+        <button>Upload</button>
+    </form>
+</body>
+</html>
